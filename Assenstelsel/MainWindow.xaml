@@ -9,10 +9,7 @@
 
         Title="MainWindow" Height="536.977" Width="951.814" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Grid x:Name="MainGrid" Margin="24,68,-51,27">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="973"/>
-        </Grid.ColumnDefinitions>
-        <Canvas x:Name="MainCanvas" MouseMove="OnMouseMove" Margin="-21,23,49,-32" MouseDown="LeftClick">
+        <Canvas x:Name="MainCanvas" MouseMove="OnMouseMove" Margin="-21,23,36,-32" MouseDown="LeftClick">
             <Canvas.Background>
                 <DrawingBrush TileMode="Tile" Viewport="40,6,100,100" ViewportUnits="Absolute">
                     <DrawingBrush.Drawing>
@@ -28,7 +25,7 @@
                 </DrawingBrush>
             </Canvas.Background>
         </Canvas>
-        <TextBlock x:Name="LiveCords" TextWrapping="Wrap" Text="" Height="97" Width="338" Margin="-22,364,655,-53" Foreground="#FF00D109" Opacity="0.5" Background="Black"/>
+        <TextBlock x:Name="LiveCords" TextWrapping="Wrap" Text="" Height="97" Width="338" Margin="-21,366,643,-51" Foreground="#FF00D109" Opacity="0.5" Background="Black"/>
         <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="82" Margin="-21,-64,0,0" Stroke="#FFFD3030" VerticalAlignment="Top" Width="845"/>
         <Label x:Name="coordinatenlb" Content="Coördinaten:" HorizontalAlignment="Left" Margin="-21,-64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.583,-0.605"/>
         <CheckBox x:Name="rasterCheckBox" Content="Raster" HorizontalAlignment="Left" Margin="62,-58,0,0" VerticalAlignment="Top"/>
@@ -37,5 +34,11 @@
         <Slider x:Name="slider_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="335,-29,0,0" Width="102" Maximum="1" Minimum="0.2" TickPlacement="TopLeft" SmallChange="0.4" TickFrequency="0"/>
         <Label x:Name="diktePuntlabel" Content="Dikte punt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,-62,0,0"/>
         <Label x:Name="dikteRandlabel" Content="Dikte rand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,-29,0,0"/>
+        <xctk:ColorPicker SelectedColor="{Binding Path=kleurPunt}" Margin="556,-58,246,447" AutomationProperties.HelpText="Kleur punt"></xctk:ColorPicker>
+        <xctk:ColorPicker SelectedColor="{Binding Path=kleurRand}" Margin="556,-22,246,411" AutomationProperties.HelpText="Kleur punt"></xctk:ColorPicker>
+        <Label x:Name="kleurPuntlabel" Content="Kleur punt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,-60,0,0"/>
+        <Label x:Name="kleurRandlabel" Content="Kleur rand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="480,-22,0,0"/>
+
+
     </Grid>
 </Window>
