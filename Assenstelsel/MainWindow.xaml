@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assenstelsel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
-    <Grid x:Name="MainGrid" Height="415" Width="800">
-        <Canvas x:Name="MainCanvas" MouseMove="OnMouseMove" Margin="0,-9,-17,0" MouseDown="LeftClick">
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+
+        Title="MainWindow" Height="536.977" Width="951.814" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+    <Grid x:Name="MainGrid" Margin="24,68,-51,27">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="973"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="MainCanvas" MouseMove="OnMouseMove" Margin="-66,23,49,-32" MouseDown="LeftClick">
             <Canvas.Background>
                 <DrawingBrush TileMode="Tile" Viewport="40,6,100,100" ViewportUnits="Absolute">
                     <DrawingBrush.Drawing>
@@ -23,6 +28,14 @@
                 </DrawingBrush>
             </Canvas.Background>
         </Canvas>
-        <TextBlock x:Name="LiveCords" TextWrapping="Wrap" Text="" Canvas.Top="348" Height="97" Width="338" Canvas.Left="357" Margin="0,350,462,-32" Foreground="#FF00D109" Opacity="0.5" Background="Black"/>
+        <TextBlock x:Name="LiveCords" TextWrapping="Wrap" Text="" Height="97" Width="338" Margin="-22,364,655,-53" Foreground="#FF00D109" Opacity="0.5" Background="Black"/>
+        <Rectangle Fill="#FFEEEEEE" HorizontalAlignment="Left" Height="82" Margin="-21,-64,0,0" Stroke="#FFFD3030" VerticalAlignment="Top" Width="845"/>
+        <Label x:Name="coordinatenlb" Content="Coördinaten:" HorizontalAlignment="Left" Margin="-21,-64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.583,-0.605"/>
+        <CheckBox x:Name="rasterCheckBox" Content="Raster" HorizontalAlignment="Left" Margin="62,-58,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="beeldschermCheckBox" Content="Beeldscherm" HorizontalAlignment="Left" Margin="120,-58,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="335,-62,0,0" Width="102" Maximum="1" Minimum="0.2" TickPlacement="TopLeft" SmallChange="0.4" TickFrequency="0"/>
+        <Slider x:Name="slider_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="335,-29,0,0" Width="102" Maximum="1" Minimum="0.2" TickPlacement="TopLeft" SmallChange="0.4" TickFrequency="0"/>
+        <Label x:Name="diktePuntlabel" Content="Dikte punt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,-62,0,0"/>
+        <Label x:Name="dikteRandlabel" Content="Dikte rand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,-29,0,0"/>
     </Grid>
 </Window>
