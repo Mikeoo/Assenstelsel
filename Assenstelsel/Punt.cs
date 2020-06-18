@@ -14,14 +14,14 @@ namespace Assenstelsel
         public int Y { get; set; }
         public int X_Beeldscherm { get; set; }
         public int Y_Beelscherm { get; set; }
-        public int rasterX { get; set; }
-        public int rasterY { get; set; }
+        public int RasterX { get; set; }
+        public int RasterY { get; set; }
         public int Kleur { get; set; }
-        public int breedteRand { get; set; }
-        public int randKleur { get; set; }
+        public int BreedteRand { get; set; }
+        public int RandKleur { get; set; }
 
 
-        public string rasterCords => rasterX.ToString() + rasterY.ToString();
+        public string RasterCords => RasterX.ToString() + RasterY.ToString();
 
     }
 }
