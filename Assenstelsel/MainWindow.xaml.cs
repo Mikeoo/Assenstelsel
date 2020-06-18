@@ -31,7 +31,7 @@ namespace Assenstelsel
 
         private void OnMouseMove(object sender, MouseEventArgs e)
         {
-            Point pointToWindow = Mouse.GetPosition(this);
+            Point pointToWindow = Mouse.GetPosition(MainCanvas);
             Point pointToScreen = PointToScreen(pointToWindow);
             
 

@@ -12,7 +12,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="973"/>
         </Grid.ColumnDefinitions>
-        <Canvas x:Name="MainCanvas" MouseMove="OnMouseMove" Margin="-66,23,49,-32" MouseDown="LeftClick">
+        <Canvas x:Name="MainCanvas" MouseMove="OnMouseMove" Margin="-21,23,49,-32" MouseDown="LeftClick">
             <Canvas.Background>
                 <DrawingBrush TileMode="Tile" Viewport="40,6,100,100" ViewportUnits="Absolute">
                     <DrawingBrush.Drawing>
